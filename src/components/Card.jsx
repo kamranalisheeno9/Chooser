@@ -236,17 +236,17 @@ const Card = () => {
       ButtonBehaviour === 1
     ) {
       setIncorrectAnswer(incorrectAnswer + 1);
-      // Updated Here
+      // Updated Here (6 January -> Kamran)
       setPoints(points + 1);
       correctPlay();
+      setActive(true);
       //
-      setActive2(true);
       setTimeout(() => {
         newRandomNumber();
       }, 1000);
 
       setTimeout(() => {
-        setActive2(false);
+        setActive(false);
       }, 2000);
     } else if (
       thePhrase === phrases[num].text &&
@@ -265,8 +265,8 @@ const Card = () => {
       ButtonBehaviour === 0
     ) {
       setIncorrectAnswer(incorrectAnswer + 1);
-      setActive2(true);
-      // Updated Here
+      // Updated Here (6 January -> Kamran)
+      setActive(true);
       setPoints(points + 1);
       correctPlay();
       //
@@ -275,7 +275,7 @@ const Card = () => {
       }, 1000);
 
       setTimeout(() => {
-        setActive2(false);
+        setActive(false);
       }, 2000);
     }
 
