@@ -1,0 +1,9 @@
+.App{
+  display: flex;
+  justify-content: center;
+  background: url('./assets/bg.jpg') !important;
+  height: 100vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+
+ }
